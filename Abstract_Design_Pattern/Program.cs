@@ -79,20 +79,16 @@
     {
         public void Conduct()
         {
-
             Printer.Instance().Print("Conducting Science Exam");
-            // Output: "Conducting Math Exam", should use Printer class to print the message
         }
 
         public void Evaluate()
         {
-            // Output: "Evaluating Math Exam", should use Printer class to print the message
             Printer.Instance().Print("Evaluating Science Exam");
         }
 
         public void PublishResults()
         {
-            // Output: "Publishing Math Exam Results", should use Printer class to print the message
             Printer.Instance().Print("Publishing Science Exam Results");
         }
     }
@@ -113,18 +109,15 @@
         {
 
             Printer.Instance().Print("Conducting Programming Exam");
-            // Output: "Conducting Math Exam", should use Printer class to print the message
         }
 
         public void Evaluate()
         {
-            // Output: "Evaluating Math Exam", should use Printer class to print the message
             Printer.Instance().Print("Evaluating Programming Exam");
         }
 
         public void PublishResults()
         {
-            // Output: "Publishing programming Exam Results", should use Printer class to print the message
             Printer.Instance().Print("Publishing Programming Exam Results");
         }
     }
