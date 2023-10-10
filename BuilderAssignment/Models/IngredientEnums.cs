@@ -1,8 +1,13 @@
-﻿namespace BuilderAssignment.Models
-{
-    /// <summary>
-    /// Enum values for Broth types
-    /// </summary>
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BuilderAssignment.Models
+{/// <summary>
+ /// Enum values for Broth types
+ /// </summary>
     public enum BrothType
     {
         Tonkotsu,

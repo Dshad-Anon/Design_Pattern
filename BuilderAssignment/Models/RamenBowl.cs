@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 
 namespace BuilderAssignment.Models
 {
-    /// <summary>
-    /// This class represents the final bowl of ramen
-    /// It should have attributes like broth, type of noodle, toppings and extras
-    /// </summary>
-    public class RamenBowl
+    internal class RamenBowl
     {
-        //TODO#1: Add attributes for each enum in IngredientEnums.cs file
-
-        //TODO#2: Return description of finished bowl of ramen
-        public static string FinishedBowlOfRamen()
+        /// <summary>
+        /// This class represents the final bowl of ramen
+        /// It should have attributes like broth, type of noodle, toppings and extras
+        /// </summary>
+        public class RamenBowl
         {
-            return "";
+            //TODO#1: Add attributes for each enum in IngredientEnums.cs file
+
+            //TODO#2: Return description of finished bowl of ramen
+            public static string FinishedBowlOfRamen()
+            {
+                return "";
+            }
         }
     }
 }
