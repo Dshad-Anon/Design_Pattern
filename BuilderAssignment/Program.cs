@@ -14,7 +14,8 @@ namespace BuilderAssignment
             RamenBowl.FinishedBowlOfRamen(misoRamen);
             Console.WriteLine(RamenBowl.FinishedBowlOfRamen(misoRamen));
 
-           
+            RamenBowl veganRamen = chef.PrepareRamen(new VeganRamenBuilder());
+
 
 
             // TODO#2: Create new RamenBuilder's for each ramen recepies (MisoRamenBuilder, SpicyRamenBuilder, VeganRamenBuilder) 
