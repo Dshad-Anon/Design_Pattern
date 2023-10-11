@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BuilderAssignment.Builders
 {
-    internal class VegeanRamenBuilder : IRamenBuilder
+    internal class VeganRamenBuilder : IRamenBuilder
     {
         private RamenBowl ramen = new RamenBowl();
         public void settingBroth()

@@ -23,7 +23,7 @@ namespace BuilderAssignment.Models
             //TODO#2: Return description of finished bowl of ramen
             public static string FinishedBowlOfRamen(RamenBowl ramen)
             {
-                 return  "This bowl of ramen contains: \n" + $"Broth:{ramen.BrothType}" + $"Noodles:{ramen.NoodleType}" + $"Toppings:{ramen.Toppings}" + $"Extras:{ramen.Extras}";
+                 return  "This bowl of ramen contains: \n" + $"Broth:{ramen.BrothType}\n" + $"Noodles:{ramen.NoodleType}\n" + $"Toppings:{ramen.Toppings}\n" + $"Extras:{ramen.Extras}\n";
                
             }
         }
