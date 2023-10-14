@@ -60,7 +60,7 @@
         public void PublishResults()
         {
             // Output: "Publishing Math Exam Results", should use Printer class to print the message
-            Printer.Instance().Print("Publishing Math Exam Results");
+            Printer.Instance().Print("Publishing Math Exam Results \n");
         }
     }
     //Concrete factory for maths exams:
@@ -93,7 +93,7 @@
         public void PublishResults()
         {
             // Output: "Publishing Math Exam Results", should use Printer class to print the message
-            Printer.Instance().Print("Publishing Science Exam Results");
+            Printer.Instance().Print("Publishing Science Exam Results \n");
         }
     }
     //Concrete factory for science exams:
@@ -125,7 +125,7 @@
         public void PublishResults()
         {
             // Output: "Publishing programming Exam Results", should use Printer class to print the message
-            Printer.Instance().Print("Publishing Programming Exam Results");
+            Printer.Instance().Print("Publishing Programming Exam Results \n");
         }
     }
     //Concrete factory for programming exams:
@@ -163,6 +163,18 @@
             mathExam.Conduct();
             mathExam.Evaluate();
             mathExam.PublishResults();
+
+            ExamFactory scienceExamFactory = new ScienceExamFactory();
+            IExam scienceExam = scienceExamFactory.CreateExam();
+            scienceExam.Conduct();
+            scienceExam.Evaluate();
+            scienceExam.PublishResults();
+
+            ExamFactory programmingExamFactory = new ProgrammingExamFactory();
+            IExam progExam = programmingExamFactory.CreateExam();
+            progExam.Conduct();
+            progExam.Evaluate();
+            progExam.PublishResults();
         }
     }
 
