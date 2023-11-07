@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Drawing;
 
 namespace IteratorAndCompositeExercise
 {
@@ -24,7 +25,18 @@ namespace IteratorAndCompositeExercise
 
                 for (int i = 0; i < breakfastitems.Count; i++)
                 {
-                    
+                    MenuItem? menuItem = (MenuItem?)breakfastitems[i];
+                    Console.WriteLine(menuItem.GetName + " ");
+                    Console.WriteLine(menuItem.GetPrice() + " ");
+                    Console.WriteLine(menuItem.GetDescription() + " ");
+                }
+                for(int i = 0; i < lunchItems.Length; i++)
+                {
+                    MenuItem menuItem = lunchItems[i];
+                    Console.WriteLine(menuItem.GetName() + " ");
+                    Console.WriteLine(menuItem.GetPrice() + " ");
+                    Console.WriteLine(menuItem.GetDescription() + " ");
+
                 }
             }
         }
@@ -98,6 +110,9 @@ namespace IteratorAndCompositeExercise
                 MenuItems = new MenuItem[Max_Items];
 
                 AddItem("Vegetarian BLT", "(Fakin´) Bacon with lettuce & tomato on whole wheat", true, 2.99);
+                AddItem("BLT","Bacon with lettuce & tomato on whole wheat\n", false, 2.99);
+                AddItem("Soup of the day", "Soup of the day, with a side of potato salad", false, 3.29);
+                AddItem("HotDog", "A hot dog, with saurkraut, relish, onions, topped with cheese",false,3.29);
             }
 
             public void AddItem(string name, string description, bool vegetarian, double price)
