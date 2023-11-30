@@ -24,11 +24,11 @@ namespace BuilderAssignment.Builders
         }
         public void addTopping()
         {
-            ramen.Toppings = "Green Onions";
+            ramen.Topping.Add(Topping.GreenOnions);
         }
         public void addExtra()
         {
-            ramen.Extras = "Corn";
+            ramen.Extra.Add(Extra.Corn);
         }
 
         public RamenBowl GetRamen()

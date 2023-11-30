@@ -17,9 +17,9 @@ namespace BuilderAssignment.Models
             
             public string? NoodleType { get; set; }
 
-            public string? Toppings { get; set; }
+            public List<Topping> Topping { get; set; } = new List<Topping>();
 
-            public string? Extras { get; set; }
+            public List<Extra> Extra { get; set; } = new List<Extra>();
             //TODO#2: Return description of finished bowl of ramen
             public static string FinishedBowlOfRamen(RamenBowl ramen)
             {
@@ -36,13 +36,32 @@ namespace BuilderAssignment.Models
             {
                 description += $" Noodles: {ramen.NoodleType}\n";
             }
-            if (!string.IsNullOrEmpty(ramen.Toppings))
+            //if (!string.IsNullOrEmpty(ramen.Topping.ToString()))
+            //{
+            //    description += $" Topping: {ramen.Topping}\n";
+            //}
+            //if (!string.IsNullOrEmpty(ramen.Extra.ToString()))
+            //{
+            //    description += $" Extra: {ramen.Extra}\n";
+            //}
+            if (ramen.Topping != null && ramen.Topping.Count > 0)
             {
-                description += $" Topping: {ramen.Toppings}\n";
+                description += " Toppings: ";
+                foreach (var topping in ramen.Topping)
+                {
+                    description += $"{topping}, ";
+                }
+                description = description.TrimEnd(',', ' ') + "\n";
             }
-            if (!string.IsNullOrEmpty(ramen.Extras))
+
+            if (ramen.Extra != null && ramen.Extra.Count > 0)
             {
-                description += $" Extra: {ramen.Extras}\n";
+                description += " Extras: ";
+                foreach (var extra in ramen.Extra)
+                {
+                    description += $"{extra}, ";
+                }
+                description = description.TrimEnd(',', ' ') + "\n";
             }
             return description;
 

@@ -21,11 +21,12 @@ namespace BuilderAssignment.Builders
         }
         public void addTopping()
         {
-            ramen.Toppings = "Bambo Shoots & Seaweed";
+            ramen.Topping.Add(Topping.BambooShoots);
+            ramen.Topping.Add(Topping.Seaweed);
         }
         public void addExtra()
         {
-            ramen.Extras = "";
+            ramen.Extra = null;
         }
 
         public RamenBowl GetRamen()
