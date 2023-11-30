@@ -15,12 +15,12 @@ namespace BuilderAssignment.Builders
 
         public void settingBroth()
         {
-           ramen.BrothType = "Miso";
+           ramen.Broth = BrothType.Miso;
         }
 
         public void settingNoodle()
         {
-            ramen.NoodleType = "Udon";
+            ramen.Noodle = NoodleType.Udon;
         }
         public void addTopping()
         {

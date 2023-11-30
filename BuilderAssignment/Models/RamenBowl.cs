@@ -13,9 +13,9 @@ namespace BuilderAssignment.Models
         public class RamenBowl
         {
             //TODO#1: Add attributes for each enum in IngredientEnums.cs file
-            public string? BrothType{get; set;}
+            public  BrothType Broth {get; set;}
             
-            public string? NoodleType { get; set; }
+            public  NoodleType Noodle { get; set; }
 
             public List<Topping> Topping { get; set; } = new List<Topping>();
 
@@ -28,13 +28,13 @@ namespace BuilderAssignment.Models
             //+ $"Noodles:{ramen.NoodleType}\n"
             //+ $"Toppings:{ramen.Toppings}\n" + $"Extras:{ramen.Extras}\n";
             string description = "This bowl of ramen contains:";
-            if (!string.IsNullOrEmpty(ramen.BrothType))
+            if (!string.IsNullOrEmpty(ramen.Broth.ToString()))
             {
-                description += $" Broth: {ramen.BrothType} \n";
+                description += $" Broth: {ramen.Broth} \n";
             }
-            if (!string.IsNullOrEmpty(ramen.NoodleType))
+            if (!string.IsNullOrEmpty(ramen.Noodle.ToString()))
             {
-                description += $" Noodles: {ramen.NoodleType}\n";
+                description += $" Noodles: {ramen.Noodle}\n";
             }
             //if (!string.IsNullOrEmpty(ramen.Topping.ToString()))
             //{

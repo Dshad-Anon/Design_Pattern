@@ -12,12 +12,12 @@ namespace BuilderAssignment.Builders
         private RamenBowl ramen = new RamenBowl();
         public void settingBroth()
         {
-            ramen.BrothType = "Vegan";
+            ramen.Broth = BrothType.Vegan;
         }
 
         public void settingNoodle()
         {
-            ramen.NoodleType = "Soba";
+            ramen.Noodle = NoodleType.Soba;
         }
         public void addTopping()
         {
